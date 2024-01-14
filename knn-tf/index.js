@@ -32,7 +32,7 @@ let {
 } = loadCSV('kc_house_data.csv', {
     shuffle: true, // For getting test points, we should shuffle our data and select.
     splitTest: 10,
-    dataColumns: ['lat', 'long'],
+    dataColumns: ['lat', 'long', 'sqft_lot', 'sqft_living'],
     labelColumns: ['price'],
 });
 
